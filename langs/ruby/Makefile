@@ -1,0 +1,2 @@
+run:
+	@ruby doesmathwork.rb
