@@ -1,0 +1,2 @@
+run:
+	@boot run
