@@ -1,11 +1,11 @@
 (ns doesmathwork.core
   (:require [clojure.string       :as    str]
+            [ring.middleware.cors :refer (wrap-cors)]
             [ring.middleware.json :refer (wrap-json-response)]
             [ring.util.response   :refer (response)]
-            [compojure.core       :refer :all]
+            [compojure.core       :refer [GET defroutes]]
             [compojure.handler    :as    handler]
             [compojure.route      :as    route]
-            [cheshire.core        :as    json]
             [me.raynes.conch      :refer (with-programs)]))
 
 (def LANGS-DIR "langs")
